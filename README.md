@@ -18,4 +18,22 @@ After running REVIGO (http://revigo.irb.hr/) with your data, go the integrative 
 
 The only thing you need to upload the file into Cytoscape (after well checking the file is in `.xgmml` extension and not in `.xgmml.txt`), you go to `import`and `Network from file` :
 
+![alt tag](https://zupimages.net/up/19/27/qaou.png)
+
+And then upload the `.xgmml` file :
+
 ![alt tag](https://zupimages.net/up/19/27/5hd6.png)
+
+Nevertheless, if you want to change the color in to green or yellow (you can also add other color in changing the script file in the line starting by `awk '{print "col2rgb(hsv(0.15, "$2","$3"))[,1]"}'` (line 48) by other hue value (here it's `0.15` for `yellow`, but you can add an another one)).
+
+So, open your terminal, `cd` your directoy with your `REViGO.xgmml` (it need to be writed exactly like that).
+And then, run the script with
+`bash script.sh`
+
+Then two files appears, one for yellow color (`REViGO-for-green-input.xgmml`) and one for green color (`REViGO-for-green-input.xgmml`):
+
+![alt tag](https://zupimages.net/up/19/27/6aur.png)
+
+![alt tag](https://zupimages.net/up/19/27/u311.png)
+
+![alt tag](https://zupimages.net/up/19/27/s1dt.png)
